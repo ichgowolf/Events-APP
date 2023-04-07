@@ -17,7 +17,7 @@ const HomeScreen = () => {
     }, [refresh])
 
     const fetchData = async () => {
-        const response = await fetch('http://10.0.0.138:8000/api/events/')
+        const response = await fetch('URL/api/events/')
         const data = await response.json()
         setData(data)
     }
